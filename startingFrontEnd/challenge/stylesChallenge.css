@@ -1,0 +1,170 @@
+:root {
+  --color-black: #000000;
+  --color-rocket: #6747c7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background: var(--color-rocket);
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+header {
+  background: var(--color-black);
+  border-bottom: 1px solid #353235;
+  padding: 30px;
+}
+
+header div {
+  text-align: center;
+}
+
+header div a {
+  color: white;
+  font-size: 18px;
+  margin: 30px;
+  text-decoration: none;
+}
+
+/* -------- CSS SOBRE ----------*/
+
+#wrapper {
+  padding: 32px;
+  text-align: center;
+}
+
+#wrapper img {
+  border-radius: 50%;
+  margin-bottom: 32px;
+  height: 220px;
+  border: 4px solid var(--color-black);
+}
+
+#wrapper p {
+  text-align: justify;
+  padding: 15px;
+}
+
+#links a {
+  color: white;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 16px;
+  text-decoration: none;
+}
+
+#links a:hover {
+  color: var(--color-black);
+  transition: color 200ms;
+}
+
+#content {
+  background: var(--color-black);
+  opacity: 3;
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#content p {
+  padding: 5px;
+  margin-top: 3px;
+  text-align: justify;
+}
+
+#tecnology ul {
+  text-align: center;
+}
+
+#tecnology li {
+  padding: 10px;
+}
+
+/* === CARDS === */
+
+.cards {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--color-black);
+  border-radius: 10px;
+  height: 400px;
+}
+
+.card_img {
+  text-align: center;
+  width: 90%;
+  padding: 4px;
+  margin-top: 3px;
+}
+
+.card_content, .card_info {
+  padding: 24px;
+  text-align: justify;
+}
+
+.card_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card_price {
+  background-color: var(--color-rocket);
+  filter: brightness(80%);
+  padding: 5px 25px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* === MODAL === */
+
+.modal_overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  margin: 5vh auto;
+  position: relative;
+}
+
+.modal .close_modal {
+  color: black;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+
+/* === MODAL.ACTIVE === */
+
+.modal_overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+iframe {
+  width: 100%;
+  height: 95%;
+  position: absolute;
+  top: 7%;
+}
