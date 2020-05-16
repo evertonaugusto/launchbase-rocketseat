@@ -11,7 +11,7 @@
 
 body {
   background: var(--color-rocket);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
 }
 
@@ -109,7 +109,8 @@ header div a {
   margin-top: 3px;
 }
 
-.card_content, .card_info {
+.card_content,
+.card_info {
   padding: 24px;
   text-align: justify;
 }
@@ -167,4 +168,16 @@ iframe {
   height: 95%;
   position: absolute;
   top: 7%;
+}
+
+/* === PAGE NOT-FOUND === */
+
+.not-found {
+  background-color: black;
+  padding: 80px;
+  max-width: 200px;
+  max-height: 100px;
+  text-align: center;
+  margin: 180px auto;
+  border-radius: 5px;
 }
