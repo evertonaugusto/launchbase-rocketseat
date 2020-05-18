@@ -2,6 +2,8 @@ const express = require("express");
 const nunjucks = require("nunjucks");
 const server = express();
 
+const content = require("./data");
+
 server.use(express.static("public"));
 
 server.set("view engine", "njk");
@@ -11,7 +13,7 @@ nunjucks.configure("views", {
 });
 
 server.get("/", function (req, res) {
-  return res.render("contentChallenge");
+  return res.render("contentChallenge", { items: content });
 });
 
 server.get("/aboutChallenge", function (req, res) {
